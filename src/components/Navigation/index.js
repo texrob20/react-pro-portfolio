@@ -1,11 +1,10 @@
 import React from 'react';
 
 function Nav(props) {
-  
-  const handleClick = (item) => {
-    console.log(item);
-    return item;
-  };
+  const {
+      contactSelected,
+      setContactSelected
+  } = props;
 
   return (
     <header className="flex-row px-1">
