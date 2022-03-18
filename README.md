@@ -16,20 +16,36 @@ GIVEN a single-page application portfolio for a web developer:
 ## Built With:
 - Nodejs
   - React
-  - 
+  - JSX
 - HTML
 - CSS (Bootstrap)
 
 ## Site Overview
+The site showcases the techniques used during the bootcamp using React to create a single page application.
 
-### Home
+### Header
+The header inclues the navigation tabs and a short description of the portfolio.
 
 ### About
+The about section provides an avatar and a brief overview of who I am.
 
-### Portfolio
+### Resume
+The resume section includes a list of skills learned during the bootcamp and a link to download a generic resume.
 
-### Contact/Footer
+### Projects
+The project section provides icons and short descriptions of some of the projects that highlight the skills learned in the bootcamp.  Each icon includes a link to the GitHub repo.
+
+### Contact
+The contact form is not functional but does support error checking of the email address.  In addition, it checks to see if data has been entered into each field and notifies the user that input is required after the user moves away from that field.
+
+### Footer
+The footer contains links to my LinkedIn, GitHub, and Stack Overflow profiles.
 
 ## Deployed Application
+The application is deployed here: https://github.io/
 
 ## Demo
+<img src=https://github.com/texrob20/react-pro-portfolio/blob/main/demo/react-pp-demo1.png>
+<img src=https://github.com/texrob20/react-pro-portfolio/blob/main/demo/react-pp-demo2.png>
+<img src=https://github.com/texrob20/react-pro-portfolio/blob/main/demo/react-pp-demo3.png>
+<img src=https://github.com/texrob20/react-pro-portfolio/blob/main/demo/react-pp-demo4.png>
