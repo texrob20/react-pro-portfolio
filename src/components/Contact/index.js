@@ -7,21 +7,22 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e) {
-        setFormState({...formState, [e.target.name]: e.target.value })
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            // isValid conditional statement
-           if (!isValid) {
-             setErrorMessage('Your email is invalid.');
-           } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-              } else {
-                setErrorMessage('');
-              }
-        }}
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
+      if (e.target.name === 'email') {
+        const isValid = validateEmail(e.target.value);
+        if (!isValid) {
+          setErrorMessage('Your email is invalid.');
+        } else {
+          setErrorMessage('');
+        }
+      } else {
+        if (!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage('');
+        }
+      }
+      if (!errorMessage) {
+        setFormState({ ...formState, [e.target.name]: e.target.value });
           }  
       }
 
@@ -35,15 +36,15 @@ function Contact() {
           <form class="col-md-6" id="contact-form" onSubmit={handleSubmit}>
           <div class="mb-3">
             <label htmlFor="name" class="form-label text-white">Name:</label>
-            <input type="text" class="form-control" defaultValue={name} onBlur={handleChange} name="name" />
+            <input type="text" class="form-control" name="Name" defaultValue={name} onBlur={handleChange} />
           </div>
           <div class="mb-3">
             <label htmlFor="email" class="form-label text-white">Email address:</label>
-            <input type="email" class="form-control" defaultValue={email} onBlur={handleChange} name="email" />
+            <input type="email" class="form-control" name="email" defaultValue={email} onBlur={handleChange} />
           </div>
           <div class="mb-3">
             <label htmlFor="message" class="form-label text-white">Message:</label>
-            <textarea name="message" class="form-control" defaultValue={message} onBlur={handleChange} rows="5"  />
+            <textarea name="Message" class="form-control" defaultValue={message} onBlur={handleChange} rows="5"  />
           </div>
           {errorMessage && (
           <div class="form-label text-white">
