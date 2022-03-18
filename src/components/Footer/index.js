@@ -3,9 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <div>
-      <p>
-        footer to be added...
-      </p>
+      <h5>&copy; 2022 Robert's Portfolio Page</h5>
     </div>
   );
 }

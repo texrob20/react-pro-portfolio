@@ -18,13 +18,13 @@ function PortfolioContainer() {
     if (currentPage === 'Project') {
       return <Project />;
     }
-    return <Contact />;
   }
   const handlePageChange = (page) => setCurrentPage(page);
   return (
     <div className="App">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Contact />
       <Footer />
     </div>
   );
