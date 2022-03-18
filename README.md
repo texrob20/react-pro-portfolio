@@ -42,7 +42,7 @@ The contact form is not functional but does support error checking of the email 
 The footer contains links to my LinkedIn, GitHub, and Stack Overflow profiles.
 
 ## Deployed Application
-The application is deployed here: https://github.io/
+The application is deployed here: http://texrob20.github.io/react-pro-portfolio
 
 ## Demo
 <img src=https://github.com/texrob20/react-pro-portfolio/blob/main/demo/react-pp-demo1.png>
