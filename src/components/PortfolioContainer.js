@@ -8,11 +8,8 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 
 function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Header');
+  const [currentPage, setCurrentPage] = useState('About');
   const renderPage =() => {    
-    if (currentPage === 'Header') {
-      return <Header />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
@@ -30,6 +27,7 @@ function PortfolioContainer() {
   return (
     <div className="App">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header />
       {renderPage()}
       <Footer />
     </div>

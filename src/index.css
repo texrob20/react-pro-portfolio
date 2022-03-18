@@ -105,7 +105,7 @@ footer h2 {
 /* STYLE ALL SECTION TAGS */
 section {
   padding: 30px;
-  background-image: url('./assets/images/security_banner.jpg');
+  background-image: url('./assets/images/binary.jpg');
 } 
 
 .block-header {
@@ -113,7 +113,7 @@ section {
   font-style: italic;
   font-size: 32px;
   margin: auto 0 auto 0;
-  color: var(--primary-color);
+  color: rgb(172, 170, 170);
 }
 .block-info {
   width: 35%;
@@ -126,9 +126,9 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  min-height: 400px;
   background-size: cover;
   background-position: center;
+  background-image: url('./assets/images/security_banner.jpg');
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -138,9 +138,11 @@ section {
   font-size: 18px;
   line-height: 1.2;
   text-align: left;
+  
 }
 
 .hero h2 {
+  color: var(--primary-color);
   text-shadow: 0 0 15px rgb(255, 255, 255);
 }
 /* HERO STYLES END */
@@ -167,6 +169,10 @@ section {
   height: 120px;
   margin: 0;
 }
+
+.about-me a {
+  color: var(--tertiary-color);
+}
 /* ABOUT ME END */
 
 /* WORK START */
@@ -182,7 +188,7 @@ section {
 }
 
 .work h1 {
-  color:gray;  
+  color: rgb(172, 170, 170);  
 }
 
 .projects {
@@ -257,7 +263,7 @@ section {
   }
 
 .contact-info img {
-  height: 70px;
+  height: 35px;
   margin: 0;
 }
 
@@ -267,6 +273,15 @@ section {
   margin: auto 0 auto 0;
 }
 
+.contact-me {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  text-shadow: 0 0 10px rgba(201, 128, 128, 0.2);
+  padding: 0px;
+  background: var(--secondary-color);
+  }
 /* CONTACT ME STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
