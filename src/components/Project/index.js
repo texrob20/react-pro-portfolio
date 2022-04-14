@@ -70,9 +70,9 @@ export default function Project() {
         </article>
 
         <article class="project">
-          <a href="https://github.com/texrob20/"><img src={require(`../../assets/images/project-5.jpg`)} alt="" /></a>
+          <a href="https://github.com/JohnPac15/babble-app/"><img src={require(`../../assets/images/project-5.jpg`)} alt="" /></a>
           <div class="project-info">
-            <h3>TBD Project #3</h3>
+            <h3>Babble App</h3>
             <h4>MERN</h4>
           </div>
         </article>
